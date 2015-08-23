@@ -23,14 +23,6 @@ public class GameController {
 
 	private PlayerColor winner;
 
-	public GameController() {
-		this(PlayerColor.YELLOW);
-	}
-
-	public GameController(Board board) {
-		this(board, PlayerColor.YELLOW);
-	}
-
 	public GameController(PlayerColor startingPlayer) {
 		this.board = new Board();
 		this.board.init();

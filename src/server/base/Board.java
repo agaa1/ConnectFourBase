@@ -105,7 +105,7 @@ public class Board {
 						Piece p3 = board.get(s3);
 						Piece p4 = board.get(s4);
 
-						if (p2 == null || p3 == null | p4 == null) {
+						if (p2 == null || p3 == null || p4 == null) {
 							continue;
 						}
 						if (p2.getColor().equals(player)
