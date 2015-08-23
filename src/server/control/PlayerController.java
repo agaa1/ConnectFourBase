@@ -47,4 +47,12 @@ public abstract class PlayerController {
 	protected PlayerColor getColor() {
 		return color;
 	}
+
+	protected PlayerColor getOpponent() {
+		if (color.equals(PlayerColor.RED)) {
+			return PlayerColor.YELLOW;
+		} else {
+			return PlayerColor.RED;
+		}
+	}
 }

@@ -12,4 +12,11 @@ public enum PlayerColor {
 	public String getDisplayCharacter() {
 		return displayCharacter;
 	}
+
+	public PlayerColor getOpponent() {
+		if (this.equals(RED)) {
+			return PlayerColor.YELLOW;
+		}
+		return PlayerColor.RED;
+	}
 }

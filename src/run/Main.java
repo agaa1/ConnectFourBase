@@ -5,7 +5,7 @@ import server.base.PlayerColor;
 import server.control.GameController;
 import server.exceptions.GameException;
 import test.CommandLinePlayerController;
-import test.StupidComputerPlayerController;
+import test.EasyComputerPlayerController;
 
 public class Main {
 
@@ -23,8 +23,10 @@ public class Main {
 
 		gc.joinGame(red);
 
-		StupidComputerPlayerController yellow = new StupidComputerPlayerController(
-				"StupidButtFace", 1000);
+		// CommandLinePlayerController yellow = new
+		// CommandLinePlayerController();
+		EasyComputerPlayerController yellow = new EasyComputerPlayerController(
+				"StupidButtFace", 1);
 
 		gc.joinGame(yellow);
 	}
