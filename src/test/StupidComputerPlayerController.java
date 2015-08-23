@@ -24,14 +24,12 @@ public class StupidComputerPlayerController extends PlayerController {
 		try {
 			Thread.sleep(sleep * delay);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
 	@Override
 	public void receiveJoinConfirmation(PlayerColor color) {
-		// TODO Auto-generated method stub
 		sleep(2);
 		System.out.println("Computer (" + name + ") joined as " + color);
 
@@ -57,7 +55,6 @@ public class StupidComputerPlayerController extends PlayerController {
 					+ action);
 			sendSubmitMove(action);
 		} catch (GameException e) {
-			// TODO Auto-generated catch block
 			System.out.println("Stupid computer broke it!");
 		}
 	}

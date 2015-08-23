@@ -14,7 +14,6 @@ public class Board {
 		board = new HashMap<Square, Piece>();
 	}
 
-	// black goes first!!!
 	public void init() {
 		board.clear();
 	}
@@ -58,7 +57,6 @@ public class Board {
 		return playerPieces;
 	}
 
-	// White starts on Rows 1-3 (bottom), Black starts on Rows 6-8 (top)
 	public Set<Action> getMoves() {
 		Set<Action> moves = new HashSet<Action>();
 

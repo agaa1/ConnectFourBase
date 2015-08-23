@@ -89,7 +89,6 @@ public class CommandLinePlayerController extends PlayerController {
 				break;
 			}
 		}
-		/* I smell. */
 		try {
 			sendSubmitMove(theMap.get(input));
 		} catch (GameException e) {
