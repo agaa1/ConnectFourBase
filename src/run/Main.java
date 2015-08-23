@@ -24,7 +24,7 @@ public class Main {
 		gc.joinGame(red);
 
 		StupidComputerPlayerController yellow = new StupidComputerPlayerController(
-				"Hank", 1000);
+				"StupidButtFace", 1000);
 
 		gc.joinGame(yellow);
 	}
